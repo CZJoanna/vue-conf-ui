@@ -7,9 +7,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.js"),
-      name: "MyLibrary",
+      name: "UiTable",
       formats: ["es", "cjs", "iife"],
-      fileName: (format) => `MyLibrary.${format}.js`,
+      fileName: (format) => `UiTable.${format}.js`,
     },
     rollupOptions: {
       external: ["vue"],

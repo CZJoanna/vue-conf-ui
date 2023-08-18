@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>email input example</title>
+  </head>
+  <body>
+    <div id="app">
+      <div style="width: 500px; margin: 20px">
+       <hello-world ></hello-world>
+       <ui-table :fields="table.fields" :rows="table.rows"></ui-table>
+      </div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.41/vue.esm-browser.prod.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import { UiTable } from "../dist/UiTable.es.js";
+      import { createApp, ref, reactive } from "vue";
+      createApp({
+        components:{
+          UiTable
+        },
+        setup() {
+          const table = reactive({
+            fields: [
+                {
+                    label: '姓名',
+                    value: 'name'
+                }
+            ],
+            rows: [
+                {
+                    name: 'Jyun'
+                }
+            ]
+          })
+
+      
+          return {
+            table,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
