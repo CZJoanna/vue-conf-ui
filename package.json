@@ -16,7 +16,6 @@
   "files": [
     "dist"
   ],
-
   "author": "You github Name <> ()",
   "license": "MIT",
   "repository": {
@@ -29,6 +28,7 @@
   "homepage": "",
   "keywords": [],
   "dependencies": {
+    "mike-vue-ui": "^0.1.15",
     "vue": "^3.3.4"
   },
   "devDependencies": {

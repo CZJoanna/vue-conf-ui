@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import 'mike-vue-ui/dist/index.css';
 
 const count = ref(0);
 
