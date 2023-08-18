@@ -1,7 +1,7 @@
 {
-  "name": "vue3-workshop-template",
-  "version": "0.0.0",
-  "description": "",
+  "name": "vue-conf-ui",
+  "version": "0.0.1",
+  "description": "vue-conf-ui",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
